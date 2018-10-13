@@ -32,9 +32,73 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+
+	<style>
+		body {
+			background-image: url('img/pic1.jpeg');
+			background-size: contain;
+		}
+
+	</style>
+	<script type = "text/javascript">
+	var i=1;
+	var j=1;
+	var k=1;
+	onload = function() {
+	
+		function changeItems() {
+			var BackgroundImg = ["img/pic1.jpeg", 
+		"img/pic2.jpeg", 
+		"img/pic3.jpeg", 
+		"img/pic4.jpeg"
+		];
+
+			var h1Languages = ["connecting cultures",
+		"conectando culturas", 
+		"连接文化",
+		"spojující kultury"	
+		];
+
+			var h2Languages = ["One family at a time",
+		"Una familia a la vez",
+		"一次一个家庭",
+		"Jedna rodina najednou"
+		];
+				
+		var body = document.getElementsByTagName('body')[0];
+		body.style.backgroundImage = 'url("' + BackgroundImg[i] + '")';
+
+		var h1 = document.getElementsByTagName('h1')[0];
+		h1.innerHTML = h1Languages[j];
+
+		var h2 = document.getElementsByTagName('h2')[0];
+		h2.innerHTML = h2Languages[k];
+
+		i++;
+		j++;
+		k++;
+
+		if(i>=4){
+		i=0;
+		}
+		
+		if(j>=4){
+		j=0;
+		}
+		
+		if(k>=4){
+		k=0;
+		}
+	}
+
+		window.setInterval(changeItems, 5000);
+	}
+	
+</script>
 </head>
 
 <body>
+	
 
   <!--==========================
   Header
@@ -61,8 +125,8 @@
   ============================-->
   <section id="hero">
     <div class="hero-container">
-      <h1>Connecting cultures..</h1>
-      <h2>One family at a time</h2>
+      <h1 style="font-family: Ubuntu;">Connecting cultures</h1>
+      <h2 style="font-family: Ubuntu;">One family at a time</h2>
       <a href="#about" class="btn-immigrant">I'm Coming to America</a>
 	  <a href="#about" class="btn-host">I want to Host</a>
 	  

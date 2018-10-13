@@ -7,8 +7,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+<script src="../js/mainpageImageScript.js"></script>
 body {
-  background: #fff;
+  background: url("../img/pic5.jpeg");
+  Background-color: whitesmoke;
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
@@ -138,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/citylights.gif");
+  /*background: url("../img/pic1.jpeg");*/
   Background-position: right;
   background-size: 100% 120%;
   position: relative;
@@ -148,6 +150,21 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+}
+
+/* Slideshow container */
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
 }
 
 #hero:before {
@@ -213,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px 28px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 10px;
+  Margin-top: 20%;
   border: 2px solid #fff;
   color: #fff;
 }
