@@ -151,21 +151,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Slideshow container */
-
-* {box-sizing:border-box}
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
@@ -267,6 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 .nav-menu ul {
